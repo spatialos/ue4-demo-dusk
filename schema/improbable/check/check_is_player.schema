@@ -1,0 +1,8 @@
+package improbable.check;
+
+// A component to be delegated so that visualizers can identify and be activated on the player.
+
+component CheckIsPlayer {
+  id = 10001;
+}
+

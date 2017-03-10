@@ -1,0 +1,6 @@
+package improbable.player;
+
+component GravGunTarget {
+  id = 10009;
+  option<EntityId> target = 1;
+  }

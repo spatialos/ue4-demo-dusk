@@ -1,0 +1,33 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{68D4F235-4869-E989-2EC6-F49B1B0047C9}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "Engineers",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],
+	"Plugins": [
+	],
+	"TargetPlatforms": [
+		"WindowsNoEditor"
+	],
+	"PostBuildSteps":
+	{
+		"Win64": [
+			"cd /D \"$(ProjectDir)\"",
+			"spatial invoke unreal package \"$(EngineDir)\" \"$(ProjectDir)\" \"$(ProjectFile)\" \"$(TargetPlatform)\" \"$(TargetType)\"",
+			"exit /B %ERRORLEVEL%"
+		],
+		"Linux": [
+			"cd \"$(ProjectDir)\"",
+			"spatial invoke unreal package \"$(EngineDir)\" \"$(ProjectDir)\" \"$(ProjectFile)\" \"$(TargetPlatform)\" \"$(TargetType)\""
+		]
+	}
+}

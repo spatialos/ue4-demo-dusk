@@ -1,0 +1,6 @@
+package improbable.level;
+
+component DayNightCycle {
+  id = 10010;
+  float game_time_in_seconds = 1;
+}

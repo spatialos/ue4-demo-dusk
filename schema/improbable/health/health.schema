@@ -1,0 +1,21 @@
+package improbable.health;
+
+type DamageRequest {
+	float damage_amount = 1;
+}
+
+type DamageResponse {}
+
+type HealRequest {
+	float heal_amount = 1;
+}
+
+type HealResponse {}
+
+component HealthInfo {
+  id = 10005;
+  float health = 1;
+  float max_health = 2;
+  command DamageResponse deal_damage(DamageRequest);
+  command HealResponse heal(HealRequest);
+}

@@ -1,0 +1,15 @@
+package improbable.transform;
+
+type Quaternion {
+  float w = 1;
+  float x = 2;
+  float y = 3;
+  float z = 4;
+}
+
+component TransformInfo {
+  id = 10002;
+  EntityPosition position = 1;
+  Quaternion rotation = 2;
+  float timestamp = 3;
+}

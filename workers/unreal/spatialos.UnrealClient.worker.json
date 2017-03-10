@@ -1,0 +1,38 @@
+{
+  "build": {
+    "tasks_filename": "spatialos.unreal.client.build.json"
+  },
+  "bridge": {
+    "worker_attribute_set": {
+      "attributes": [
+        "UnrealClient"
+      ]
+    },
+    "entity_interest": {
+      "range_entity_interest": {
+        "radius": 2
+      }
+    },
+    "streaming_query": [],
+    "component_delivery": {
+      "default": "RELIABLE_ORDERED",
+      "checkout_all_initially": true
+    },
+    "asset_context": {
+      "use_player_context_if_authoritative": false
+    }
+  },
+  "external": {
+    "default": {
+      "run_type": "EXECUTABLE_ZIP",
+      "windows": {
+        "artifactName": "UnrealClient@Windows.zip",
+        "command": "./Engineers/Binaries/Win64/Engineers.exe",
+        "arguments": [
+          "+workerType",
+          "UnrealClient"
+        ]
+      }
+    }
+  }
+}

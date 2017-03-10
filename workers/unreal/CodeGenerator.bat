@@ -1,0 +1,1 @@
+".spatialos/bin/CodeGenerator.exe" --json-dir=Source/Engineers/Improbable/Generated/json --unreal-output-dir=Source/Engineers/Improbable/Generated/cpp/unreal --unreal-project-name=Engineers

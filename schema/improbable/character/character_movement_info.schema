@@ -1,0 +1,8 @@
+package improbable.character;
+
+component CharacterMovementInfo {
+  id = 10004;
+  Vector3d direction = 1;
+  float speed = 2;
+  float timestamp = 3;
+}

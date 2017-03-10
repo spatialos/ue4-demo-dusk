@@ -1,0 +1,6 @@
+package improbable.forcefield;
+
+component ForcefieldInfo {
+  id = 10011;
+  string forcefield_name = 1;
+}

@@ -1,0 +1,49 @@
+{
+  "targets": [
+    {
+      "path": "Source/Engineers/SpatialOS",
+      "type": "unreal",
+      "packages": [
+        {
+          "name":  "improbable_sdk_plugin"
+        }
+      ]
+    },
+    {
+      "path": "Binaries/ThirdParty/Improbable/linux_x64",
+      "type": "worker_sdk",
+      "packages": [
+        {
+          "name":  "linux_x64_unreal"
+        }
+      ]
+    },
+    {
+      "path": "Binaries/ThirdParty/Improbable/windows_x86",
+      "type": "worker_sdk",
+      "packages": [
+        {
+          "name":  "windows_x86"
+        }
+      ]
+    },
+    {
+      "path": "Binaries/ThirdParty/Improbable/windows_x64",
+      "type": "worker_sdk",
+      "packages": [
+        {
+          "name":  "windows_x64"
+        }
+      ]
+    },
+    {
+      "path": ".spatialos/bin",
+      "type": "code_generation",
+      "packages": [
+        {
+          "name": "Improbable.CodeGeneration"
+        }
+      ]
+    }
+  ]
+}

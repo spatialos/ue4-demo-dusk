@@ -1,0 +1,7 @@
+package improbable.animation;
+
+component AnimationInfo {
+  id = 10006;
+  string current_animation = 1;
+  float timestamp = 2;
+}

@@ -1,0 +1,133 @@
+{
+  "javaparams": [
+    {
+      "name": "-DCLOUD_LAUNCH_CONFIG",
+      "value": "improbable.launch.AutomaticEngineStartupLaunchConfig"
+    },
+    {
+      "name": "-DIGNORE_FLAGS_IN_GAME_PROPERTIES_FILE",
+      "value": "true"
+    },
+    {
+      "name": "-J-Xms1G"
+    },
+    {
+      "name": "-J-Xmx12G"
+    }
+  ],
+  "flagz": [
+    {
+      "name": "bridge_enable_ping",
+      "value": "true"
+    },
+    {
+      "name": "engine_automatic_scaling_enabled",
+      "value": "true"
+    },
+    {
+      "name": "engine_start_timeout_seconds",
+      "value": "9.999999e+06"
+    },
+    {
+      "name": "entity_activator",
+      "value": "improbable.corelib.entity.CoreLibraryEntityActivator"
+    },
+    {
+      "name": "game_chunk_size",
+      "value": "50"
+    },
+    {
+      "name": "game_world_edge_length",
+      "value": "5000"
+    },
+    {
+      "name": "player_engine_type",
+      "value": "UnityClient"
+    }
+  ],
+  "nodes": [
+    {
+      "name": "master",
+      "modules": [
+        {
+          "name": "ReceptionistModule",
+          "params": []
+        },
+        {
+          "name": "DevWorldRestApiModule",
+          "params": []
+        },
+        {
+          "name": "BridgeOracleModule",
+          "params": []
+        },
+        {
+          "name": "BridgeModuleOracleModule",
+          "params": []
+        },
+        {
+          "name": "AssetDatabaseModule",
+          "params": []
+        },
+        {
+          "name": "EngineStartupModuleOracleModule",
+          "params": []
+        },
+        {
+          "name": "InspectionRestModule",
+          "params": []
+        },
+        {
+          "name": "PersistenceModule",
+          "params": []
+        },
+        {
+          "name": "RouterModule",
+          "params": []
+        },
+        {
+          "name": "EngineStartupModule",
+          "params": []
+        },
+        {
+          "name": "WorldAppSupervisorModule",
+          "params": []
+        },
+        {
+          "name": "WorldAppOracleModule",
+          "params": []
+        },
+        {
+          "name": "ProfilingModule",
+          "params": []
+        },
+        {
+          "name": "GSimBridgeModule",
+          "params": [
+            {
+              "name": "gSimNumber",
+              "value": "1"
+            },
+            {
+              "name": "nee",
+              "value": "100"
+            },
+            {
+              "name": "nen",
+              "value": "100"
+            },
+            {
+              "name": "swe",
+              "value": "-100"
+            },
+            {
+              "name": "swn",
+              "value": "-100"
+            }
+          ]
+        }
+      ],
+      "size": "single"
+    }
+  ]
+}

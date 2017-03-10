@@ -1,0 +1,5 @@
+package improbable.character;
+
+component CharacterController {
+  id = 10007;
+}

@@ -1,0 +1,89 @@
+{
+  "build": {
+    "tasks_filename": "spatialos.unreal.worker.build.json"
+  },
+  "bridge": {
+    "worker_attribute_set": {
+      "attributes": [
+        "UnrealWorker"
+      ]
+    },
+    "entity_interest": {
+      "range_entity_interest": {
+        "radius": 2
+      }
+    },
+    "streaming_query": [],
+    "component_delivery": {
+      "default": "RELIABLE_ORDERED",
+      "checkout_all_initially": true
+    },
+    "asset_context": {}
+  },
+  "managed": {
+    "windows": {
+      "artifact_name": "UnrealWorker@Windows.zip",
+      "command": "Engineers/Binaries/Win64/EngineersServer.exe",
+      "arguments": [
+        "-server",
+        "-unattended",
+        "-nopause",
+        "-noini",
+        "+appName",
+        "${IMPROBABLE_PROJECT_NAME}",
+        "+receptionistIp",
+        "${IMPROBABLE_RECEPTIONIST_IP}",
+        "+receptionistPort",
+        "${IMPROBABLE_RECEPTIONIST_PORT}",
+        "+workerType",
+        "${IMPROBABLE_WORKER_NAME}",
+        "+workerId",
+        "${IMPROBABLE_WORKER_ID}",
+        "+linkProtocol",
+        "RakNet",
+        "log=${IMPROBABLE_LOG_FILE}"
+      ]
+    },
+    "linux": {
+      "artifact_name": "UnrealWorker@Linux.zip",
+      "command": "EngineersServer.sh",
+      "arguments": [
+        "-server",
+        "-unattended",
+        "-nopause",
+        "-noini",
+        "+appName",
+        "${IMPROBABLE_PROJECT_NAME}",
+        "+receptionistIp",
+        "${IMPROBABLE_RECEPTIONIST_IP}",
+        "+receptionistPort",
+        "${IMPROBABLE_RECEPTIONIST_PORT}",
+        "+workerType",
+        "${IMPROBABLE_WORKER_NAME}",
+        "+workerId",
+        "${IMPROBABLE_WORKER_ID}",
+        "+linkProtocol",
+        "RakNet",
+        "log=${IMPROBABLE_LOG_FILE}"
+      ]
+    }
+  },
+  "external": {
+    "default": {
+      "run_type": "EXECUTABLE_ZIP",
+      "windows": {
+        "artifact_name": "UnrealWorker@Windows.zip",
+        "command": "Engineers/Binaries/Win64/EngineersServer.exe",
+        "arguments": [
+          "-server",
+          "-unattended",
+          "-nopause",
+          "-noini",
+          "+workerType",
+          "UnrealWorker",
+          "log=unrealWorker.log"
+        ]
+      }
+    }
+  }
+}

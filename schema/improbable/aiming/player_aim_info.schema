@@ -1,0 +1,7 @@
+package improbable.aiming;
+
+component PlayerAimInfo {
+  id = 10008;
+  float aim_pitch = 1;
+  bool is_in_ironsights = 2;
+}

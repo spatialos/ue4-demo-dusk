@@ -1,0 +1,5 @@
+package improbable.player;
+
+component PlayerLifeCycle {
+  id = 10003;
+}

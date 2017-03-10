@@ -1,0 +1,6 @@
+{
+  "build": {
+    "tasks_filename": "spatialos.gsim.build.json",
+    "generated_build_scripts_type": "gsim"
+  }
+}

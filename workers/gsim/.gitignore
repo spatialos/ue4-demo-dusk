@@ -1,0 +1,9 @@
+#Improbable GSim Ignores
+/build.json
+/spatialos.gsim.build.json
+/.spatialos
+/generated/
+/project/
+/target/
+/spatialos_nexus.sbt
+/spatialos_pack.sbt
