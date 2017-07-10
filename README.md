@@ -1,5 +1,8 @@
 **Copyright (c) 2017 Improbable.**
 
+**The DUSK project is no longer maintained and is not compatible with current versions of SpatialOS.**
+If you would like to see a simple example of an Unreal integration, please have a look at the [RPG Demo](https://github.com/spatialos/RPGDemo).
+
 
 # DUSK (SpatialOS)
 
